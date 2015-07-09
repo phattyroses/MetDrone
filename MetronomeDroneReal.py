@@ -1,13 +1,4 @@
 ﻿
-#TODO CHANGE BACKGROUND OF WINDOW TO SOMETHING AWESOME
-#TODO CHANGE THE FONT AND SIZE OF THE TEMPO AND PITCH SO THEY STAND OUT 
-
-
-
-#TODO make sure all labels initially are set to retrieve the starting value (no magic numbers)
-
-
-
 #import libraries
 from music import *
 from gui import *
@@ -209,7 +200,7 @@ def onClose():
    stopDrone()
 
 #Load image
-metImage = Icon("Metronome Icon.png", d.getWidth(), d.getHeight())
+#metImage = Icon("Metronome Icon.png", d.getWidth(), d.getHeight())
 #Load audio files 
 
 #For drone sounds
@@ -369,10 +360,7 @@ for i in range(13):
    xPos = xPos + increment
    thickness += 1
 moreSilence = Label("Silence Length:")
-#moreSilence.setForegroundColor(Color.BLUE)
 moreSilence.setFont(Font("SansSerif", Font.BOLD, 12))
 d.add(moreSilence, 150, 300)
-#d.add(sepScreen)
-#d.add(botScreen)
 d.addOrder(botBorder,5, 0, 400)
 
